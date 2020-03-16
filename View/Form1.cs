@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Creations
 {
-    public partial class frmTelaInicial : Form
+    public partial class btn_TelaInicial_Cadastro : Form
     {
-        public frmTelaInicial()
+        public btn_TelaInicial_Cadastro()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
