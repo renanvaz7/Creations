@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_TelaInicial_Cadastrar = new System.Windows.Forms.Button();
             this.btn_TelaInicial_Entrar = new System.Windows.Forms.Button();
             this.btn_TelaInicial_Aluno = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,16 +52,17 @@
             this.textBox2.Size = new System.Drawing.Size(420, 31);
             this.textBox2.TabIndex = 3;
             // 
-            // button1
+            // btn_TelaInicial_Cadastrar
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(266, 262);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 43);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cadastre-se";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_TelaInicial_Cadastrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_TelaInicial_Cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_TelaInicial_Cadastrar.Location = new System.Drawing.Point(266, 262);
+            this.btn_TelaInicial_Cadastrar.Name = "btn_TelaInicial_Cadastrar";
+            this.btn_TelaInicial_Cadastrar.Size = new System.Drawing.Size(148, 43);
+            this.btn_TelaInicial_Cadastrar.TabIndex = 4;
+            this.btn_TelaInicial_Cadastrar.Text = "Cadastre-se";
+            this.btn_TelaInicial_Cadastrar.UseVisualStyleBackColor = true;
+            this.btn_TelaInicial_Cadastrar.Click += new System.EventHandler(this.btn_TelaInicial_Cadastrar_Click);
             // 
             // btn_TelaInicial_Entrar
             // 
@@ -125,7 +126,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btn_TelaInicial_Aluno);
             this.panel1.Controls.Add(this.btn_TelaInicial_Entrar);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btn_TelaInicial_Cadastrar);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -133,17 +134,6 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 9;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(415, 42);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Programa Da Academia";
             // 
             // linkLabel1
             // 
@@ -157,6 +147,17 @@
             this.linkLabel1.TabIndex = 11;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Esqueci a senha";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(259, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(415, 42);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Programa Da Academia";
             // 
             // btn_TelaInicial_Cadastro
             // 
@@ -178,7 +179,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_TelaInicial_Cadastrar;
         private System.Windows.Forms.Button btn_TelaInicial_Entrar;
         private System.Windows.Forms.Button btn_TelaInicial_Aluno;
         private System.Windows.Forms.PictureBox pictureBox2;

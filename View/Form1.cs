@@ -21,5 +21,13 @@ namespace Creations
         {
 
         }
+
+        private void btn_TelaInicial_Cadastrar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form frm_TelaIncial = new frm_Cadastrar();
+            frm_TelaIncial.Closed += (s, args) => this.Close();
+            frm_Cadastrar.Show();
+        }
     }
 }
