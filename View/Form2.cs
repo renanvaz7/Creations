@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Creations.View
 {
-    public partial class Form2 : Form
+    public partial class frm_Cadastrar : Form
     {
-        public Form2()
+        public frm_Cadastrar()
         {
             InitializeComponent();
         }
