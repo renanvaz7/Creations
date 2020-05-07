@@ -97,5 +97,14 @@
   <ItemGroup>
     <None Include="Resources\1200px-Google__G__Logo.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casamento-em-tons-de-azul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

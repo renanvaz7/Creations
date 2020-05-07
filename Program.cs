@@ -16,7 +16,7 @@ namespace Creations
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btn_TelaInicial_Cadastro());
+            Application.Run(new btn_TelaLogin());
         }
     }
 }
